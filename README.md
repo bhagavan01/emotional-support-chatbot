@@ -1,31 +1,47 @@
-# emotional-support-chatbot
-pre-requirements for vscode to run the chatbot
+# 🧠 LPU Emotional Support Chatbot
 
-1-Make sure you're using Python 3.9+
-command:python --version
-2-Required Python Packages:
-command:pip install langchain langchain-community langchain-chroma langchain-huggingface \
-    sentence-transformers chromadb pypdf gradio requests pillow
-3-For chatgroq
-command:pip install langchain-groq
-4-If needed (depending on OS or environment):
-command:pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-5-python-dotenv to load from .env
-command:pip install python-dotenv
-6-.env file
-command:GROQ_API_KEY=gsk_your_key_here
-7-Load it in code:
-command:from dotenv import load_dotenv
-load_dotenv()
-8-Enable Virtual Environment (Recommended)
-command:python -m venv venv
-venv\Scripts\activate   # Windows
-# or
-source venv/bin/activate   # Linux/Mac
-9-VS Code Extensions 
-Extensions:Python
-Pylance
-Jupyter (for notebook-based testing)
-Gradio Tools (optional)
-10-To Run the App
-command:python main.py
+A compassionate, AI-powered mental health chatbot built for students of **Lovely Professional University (LPU)**. This project uses **LangChain**, **Gradio**, **Groq (LLaMA3)**, **HuggingFace embeddings**, and **ChromaDB** to create a secure and empathetic emotional support system.
+
+---
+
+## 💡 Features
+
+- 🧠 **Mental Health Assistant** trained on custom PDF documents
+- 🗂️ **Context-aware answers** using Vector DB (ChromaDB)
+- 🤖 **LLaMA3-70B** via Groq API for high-quality responses
+- 📚 **Conversation History** saved and displayed
+- 💬 **Gradio UI** with modern dark theme and responsive design
+- 🏷️ Team branding with **LPU Logo** and member details
+- 📄 PDF-based knowledge ingestion with **LangChain Document Loader**
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| [LangChain](https://www.langchain.com/) | Conversational AI Framework |
+| [Groq](https://groq.com/) + LLaMA3 | Fast & powerful LLM |
+| [ChromaDB](https://www.trychroma.com/) | Vector Database |
+| [HuggingFace Transformers](https://huggingface.co/) | Embeddings |
+| [Gradio](https://gradio.app/) | Frontend Interface |
+| [Pillow](https://python-pillow.org/) | Image Processing |
+| [Requests](https://docs.python-requests.org/) | HTTP Requests |
+
+---
+
+## 📁 Folder Structure
+
+```bash
+📦 emotional-support-chatbot/
+ ┣ 📄 main.py
+ ┣ 📄 conversation_history.json
+ ┣ 📄 requirements.txt
+ ┣ 📄 README.md
+ ┣ 📁 chroma_db/
+ ┗ 📄 emotional support.pdf
+
+
+
+
+
